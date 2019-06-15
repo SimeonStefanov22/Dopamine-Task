@@ -12,11 +12,39 @@ body {
     height: 100%;
     background-image: url("backgroundDesktop.png");
     background-size: 100% 100%;
-    padding: 0 0.5em 0 0.5em; }
+    padding: 0 0.5em 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden; }
     body .container div {
       width: 100%; }
       body .container div img {
         width: 100%; }
+
+.flame {
+  position: relative;
+  top: 8.2em;
+  z-index: 0; }
+
+#decor-time-sum {
+  width: 21.6em;
+  position: relative;
+  bottom: 2.6em;
+  right: 4.25em; }
+
+.outer-orange-box {
+  background: #ba110e;
+  z-index: 1;
+  position: relative;
+  top: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.2em; }
+  .outer-orange-box .orange-box {
+    width: 100%;
+    height: 140px;
+    background: #ba110e;
+    box-shadow: 0 0 6px 6px rgba(255, 219, 1, 0.5); }
 
 .jackpot {
   display: flex;
@@ -24,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 0.5px solid #5f5b40;
-  height: 4em; }
+  height: 4.3em; }
   .jackpot .img-jackpot {
     width: 50%; }
   .jackpot .jackpot-box {
@@ -69,5 +97,51 @@ body {
         font-size: 0.6em;
         color: #f5cf02;
         display: inline-block; }
+
+#ceiling-box {
+  margin-bottom: 12rem; }
+
+#prog-box {
+  position: relative;
+  top: 0.8em; }
+
+.time-jackpot-before {
+  color: white;
+  background: #dd360a;
+  position: relative;
+  top: 150px;
+  left: 52px;
+  z-index: 2;
+  font-size: 0.6em;
+  width: max-content;
+  border: 2px solid #e65a21;
+  border-radius: 15px;
+  padding: 0.6em; }
+  .time-jackpot-before span:last-of-type {
+    color: #fed01f; }
+  .time-jackpot-before img {
+    background: white;
+    border-radius: 45%;
+    margin: 0 0.2em 0 0.2em;
+    position: relative;
+    top: 0.1em; }
+  .time-jackpot-before #watch {
+    width: 10px; }
+
+.time-jackpot-sum {
+  position: relative;
+  top: 135px;
+  left: 45px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  color: #f5cf02;
+  font-size: 1.8em;
+  font-weight: 900; }
+  .time-jackpot-sum .icon-box-time {
+    width: 23px;
+    height: 30px;
+    position: relative;
+    top: 2px; }
 
 /*# sourceMappingURL=index.css.map */

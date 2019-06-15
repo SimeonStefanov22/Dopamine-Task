@@ -11,6 +11,7 @@ body{
   display: flex;
   justify-content: center;
 
+
   .container{
 
     width: 230px;
@@ -19,6 +20,13 @@ body{
     background-image: url("backgroundDesktop.png");
     background-size: 100% 100%;
     padding: 0 0.5em 0 0.5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+
+
 
 
 
@@ -35,13 +43,53 @@ body{
   }
 }
 
+.flame{
+
+  position: relative;
+  top: 8.2em;
+  z-index: 0;
+
+}
+
+#decor-time-sum{
+
+  width: 21.6em;
+  position: relative;
+  bottom: 2.6em;
+  right: 4.25em;
+}
+
+.outer-orange-box{
+
+  background: rgb(186, 17, 14);
+
+  z-index: 1;
+  position: relative;
+  top: 1em;
+  margin-bottom: 0.5em;
+  padding: 0.2em;
+
+  .orange-box{
+    width: 100%;
+    height: 140px;
+    background: rgb(186, 17, 14);
+    box-shadow: 0 0 6px 6px rgba(255, 219, 1, 0.5);
+
+
+
+  }
+
+}
+
+
+
 .jackpot{
   display: flex;
   flex-direction:row ;
   justify-content: center;
   align-items: center;
   border: 0.5px solid rgb(95, 91, 64);
-  height: 4em;
+  height: 4.3em;
 
 
 
@@ -120,6 +168,75 @@ body{
   }
 
 }
+
+#ceiling-box{
+  margin-bottom: 12rem;
+
+}
+
+#prog-box{
+  position: relative;
+  top: 0.8em;
+}
+
+.time-jackpot-before{
+  color: white;
+  background: rgb(221, 54, 10);
+  position: relative;
+  top: 150px;
+  left: 52px;
+  z-index: 2;
+  font-size: 0.6em;
+ width: max-content;
+  border: 2px solid rgb(230, 90, 33);
+  border-radius: 15px;
+  padding: 0.6em;
+
+  span:last-of-type{
+    color: rgb(254, 208, 31);
+  }
+  img{
+    background: rgb(255, 255, 255);
+    border-radius: 45%;
+    margin: 0 0.2em 0 0.2em;
+    position: relative;
+    top: 0.1em;
+  }
+
+
+  #watch{
+    width: 10px;
+  }
+}
+
+.time-jackpot-sum{
+
+  position: relative;
+  top: 135px;
+  left: 45px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+
+  color: rgb(245, 207, 2);
+  font-size: 1.8em;
+  font-weight: 900;
+
+  .icon-box-time{
+    width: 23px;
+    height: 30px;
+    position: relative;
+    top: 2px;
+
+
+  }
+
+}
+
+
+
+
+
 
 
 

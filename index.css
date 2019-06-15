@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: center; }
+  body .container {
+    width: 230px;
+    height: 100%;
+    background-image: url("backgroundDesktop.png");
+    background-size: 100% 100%;
+    padding: 0 0.5em 0 0.5em; }
+    body .container div {
+      width: 100%; }
+      body .container div img {
+        width: 100%; }
+
+.jackpot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid #5f5b40;
+  height: 4em; }
+  .jackpot .img-jackpot {
+    width: 50%; }
+  .jackpot .jackpot-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #2b270e;
+    height: inherit;
+    border: 0.5px solid #5f5b40;
+    border-left: none;
+    padding-left: 0.3em; }
+    .jackpot .jackpot-box .sum-jackpot {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #f5cf02; }
+      .jackpot .jackpot-box .sum-jackpot .icon-box {
+        width: 13px;
+        height: 15px;
+        display: flex;
+        justify-items: center;
+        position: relative;
+        top: 0.2em; }
+      .jackpot .jackpot-box .sum-jackpot .sum {
+        font-weight: 900;
+        font-size: 1.1em; }
+    .jackpot .jackpot-box .pays-before {
+      background: #0d0d08;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.2em;
+      width: 73%; }
+      .jackpot .jackpot-box .pays-before .text-pays-before {
+        margin: 0;
+        color: white;
+        font-size: 0.6em; }
+      .jackpot .jackpot-box .pays-before img {
+        width: 0.6em; }
+      .jackpot .jackpot-box .pays-before .sum-pays-before {
+        font-size: 0.6em;
+        color: #f5cf02;
+        display: inline-block; }
+
+/*# sourceMappingURL=index.css.map */

@@ -4,7 +4,7 @@
 body {
   height: 100vh;
   margin: 0;
-  padding: 2rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
   display: flex;
   justify-content: center; }
   body .container {
@@ -25,8 +25,27 @@ body {
 .flame {
   position: relative;
   top: 8.2em;
-  z-index: 0; }
+  z-index: 0;
+  animation-name: flicker;
+  animation-duration: 3ms;
+  animation-delay: 600ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; }
 
+@keyframes flicker {
+  0% {
+    transform: rotate(-1deg); }
+  20% {
+    transform: rotate(1deg); }
+  40% {
+    transform: rotate(-1deg); }
+  60% {
+    transform: rotate(1deg) scaleY(1.04); }
+  80% {
+    transform: rotate(-2deg) scaleY(0.92); }
+  100% {
+    transform: rotate(1deg); } }
 #decor-time-sum {
   width: 21.6em;
   position: relative;
@@ -35,6 +54,8 @@ body {
 
 .outer-orange-box {
   background: #ba110e;
+  background-image: url("./fireImages/fire_23.png");
+  background-size: 100% 100%;
   z-index: 1;
   position: relative;
   top: 1em;
@@ -43,7 +64,8 @@ body {
   .outer-orange-box .orange-box {
     width: 100%;
     height: 140px;
-    background: #ba110e;
+    background-image: url("./fireImages/fire_23.png");
+    background-size: 100% 100%;
     box-shadow: 0 0 6px 6px rgba(255, 219, 1, 0.5); }
 
 .jackpot {
@@ -78,7 +100,8 @@ body {
         top: 0.2em; }
       .jackpot .jackpot-box .sum-jackpot .sum {
         font-weight: 900;
-        font-size: 1.1em; }
+        font-size: 1.1em;
+        text-shadow: 0 2px black; }
     .jackpot .jackpot-box .pays-before {
       background: #0d0d08;
       border-radius: 8px;
@@ -92,7 +115,10 @@ body {
         color: white;
         font-size: 0.6em; }
       .jackpot .jackpot-box .pays-before img {
-        width: 0.6em; }
+        width: 0.6em;
+        margin-left: 0.1em;
+        position: relative;
+        top: 1px; }
       .jackpot .jackpot-box .pays-before .sum-pays-before {
         font-size: 0.6em;
         color: #f5cf02;
@@ -103,7 +129,7 @@ body {
 
 #prog-box {
   position: relative;
-  top: 0.8em; }
+  top: 13px; }
 
 .time-jackpot-before {
   color: white;
@@ -124,7 +150,7 @@ body {
     border-radius: 45%;
     margin: 0 0.2em 0 0.2em;
     position: relative;
-    top: 0.1em; }
+    top: 2px; }
   .time-jackpot-before #watch {
     width: 10px; }
 
@@ -134,14 +160,16 @@ body {
   left: 45px;
   z-index: 3;
   display: flex;
-  flex-direction: row;
-  color: #f5cf02;
-  font-size: 1.8em;
-  font-weight: 900; }
+  flex-direction: row; }
+  .time-jackpot-sum .time-sum {
+    color: #f5cf02;
+    font-size: 1.8em;
+    font-weight: 900;
+    text-shadow: 0 2px black; }
   .time-jackpot-sum .icon-box-time {
     width: 23px;
     height: 30px;
     position: relative;
-    top: 2px; }
+    top: 8px; }
 
 /*# sourceMappingURL=index.css.map */

@@ -6,35 +6,27 @@
     box-sizing: border-box;
   }
 
-
 body{
 
+  font-family: Arial;
   height: 100vh;
   margin: 0;
   padding: 1rem 0 2rem 0;
   display: flex;
   justify-content: center;
 
-
   .container{
 
     width: 230px;
     height: 100%;
-
     background-image: url("backgroundDesktop.png");
-    background-size: 100% 100%;
+    background-size: 125% 100%;
+    background-position: -57px 0;
     padding: 0 0.5em 0 0.5em;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-
-
-
-
-
-
 
     div{
       width: 100%;
@@ -83,47 +75,34 @@ body{
   }
 }
 
-
 #decor-time-sum{
 
   width: 21.6em;
   position: relative;
   bottom: 2.6em;
-  right: 4.25em;
+  right: 64.5px;
 }
 
 .outer-orange-box{
-
   background: rgb(186, 17, 14);
   background-image: url("./fireImages/fire_23.png");
   background-size: 100% 100%;
-
-
-
+  box-shadow: 0 0 6px 6px rgba(255, 219, 1, 0.3);
   z-index: 1;
   position: relative;
   top: 1em;
   margin-bottom: 0.5em;
-  padding: 0.2em;
 
   .orange-box{
     width: 100%;
     height: 140px;
     background-image: url("./fireImages/fire_23.png");
     background-size: 100% 100%;
-    box-shadow: 0 0 6px 6px rgba(255, 219, 1, 0.5);
-
-
-
-
-
-
+    box-shadow: inset 0 0 6px 6px rgba(255, 219, 1, 0.5);
 
   }
 
 }
-
-
 
 .jackpot{
   display: flex;
@@ -133,11 +112,8 @@ body{
   border: 0.5px solid rgb(95, 91, 64);
   height: 4.3em;
 
-
-
   .img-jackpot{
-    width: 50%;
-
+    width: 55%;
 
   }
 
@@ -152,10 +128,6 @@ body{
     border-left: none;
     padding-left: 0.3em;
 
-
-
-
-
     .sum-jackpot{
       display: flex;
       flex-direction: row;
@@ -163,49 +135,45 @@ body{
       color: rgb(245, 207, 2);
 
       .icon-box{
-        width: 13px;
-        height: 15px;
+        width: 12px;
+        height: 14px;
         display: flex;
         justify-items: center;
         position: relative;
-        top: 0.2em;
-
-
+        top: 3px;
 
       }
       .sum{
-        font-weight: 900;
-        font-size: 1.1em;
+
+        font-size: 17px;
+        font-weight: 600;
         @include shadowSum;
       }
 
     }
     .pays-before{
-      background: rgb(13, 13, 8);
+      background: rgb(30, 30, 13);
       border-radius: 8px;
       display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0.2em;
-      width: 73%;
-
-
-
+      width: 68%;
 
       .text-pays-before{
 
         margin: 0;
         color: rgb(255, 255, 255);
-        font-size: 0.6em;
+        font-size: 8px;
       }
       img{
-        width: 0.6em;
+        width: 0.4em;
         margin-left: 0.1em;
         position: relative;
-        top: 1px;
+
       }
       .sum-pays-before{
-        font-size: 0.6em;
+        font-size: 8px;
         color: rgb(245, 207, 2);
         display: inline-block;
       }
@@ -217,7 +185,6 @@ body{
 
 #ceiling-box{
   margin-bottom: 12rem;
-
 }
 
 #prog-box{
@@ -229,11 +196,11 @@ body{
   color: white;
   background: rgb(221, 54, 10);
   position: relative;
-  top: 150px;
-  left: 52px;
+  top: 145px;
+  left: 46px;
   z-index: 2;
   font-size: 0.6em;
- width: max-content;
+  width: max-content;
   border: 2px solid rgb(230, 90, 33);
   border-radius: 15px;
   padding: 0.6em;
@@ -248,7 +215,6 @@ body{
     position: relative;
     top: 2px;
   }
-
 
   #watch{
     width: 10px;
@@ -266,18 +232,19 @@ body{
 
   .time-sum{
     color: rgb(245, 207, 2);
-    font-size: 1.8em;
-    font-weight: 900;
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    bottom: 4px;
     @include shadowSum;
+
   }
 
   .icon-box-time{
     width: 23px;
     height: 30px;
     position: relative;
-    top: 8px;
-
-
+    top: 1px;
 
   }
 
